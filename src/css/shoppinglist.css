@@ -1,0 +1,373 @@
+.hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+
+}
+
+.shopping-img {
+    width: 100px;
+    height: 142px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+@media screen and (min-width: 768px) {
+  .shopping-img {
+    width: 116px;
+    height: 165px;
+    margin-top: 10px;
+  }
+}
+
+.shopping-info {
+  margin-left: 14px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.shopping-socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.shopping-card-item {
+  display: flex;
+  position: relative;
+
+  width: 335px;
+  min-height: 170px;
+  margin-bottom: 20px;
+  padding: 14px;
+
+  border-radius: 16px;
+  border: 2px solid var(--same-blue);
+  background: var(--secondary-color);
+
+}
+@media screen and (min-width: 768px) {
+  .shopping-card-item {
+    width: 704px;
+    height: 213px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .shopping-card-item {
+    width: 900px;
+    height: 213px;
+
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .shopping-card-item{
+    width: 996px;
+  }
+}
+
+
+.shopping_title{
+  margin-bottom: 4px;
+
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.12;
+
+
+  color: var(--primary-color);
+}
+@media screen and (min-width: 768px) {
+  .shopping_title {
+    margin-top: 10px;
+  }
+}
+
+.shopping-list_name {
+  margin-bottom: 8px;
+
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  color: var(--light-gray-text);
+}
+@media screen and (min-width: 768px) {
+  .shopping-list_name {
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}}
+
+@media screen and (max-width: 768px) {
+.description-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 14ch;
+
+}}
+
+@media screen and (max-width: 768px) {
+.shopping-list_name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 20ch;
+}}
+
+.shopping-text {
+  margin-bottom:  16px;
+
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+
+  color: var(--primary-color);
+}
+@media screen and (min-width: 768px) {
+  .desc {
+    margin-bottom: 48px;
+  }
+}
+
+
+.shopping_author {
+  font-family: 'Italic';
+  font-size: 12px;
+  line-height: 1.16;
+  color: var(--light-gray-text);
+}
+@media screen and (min-width: 768px) {
+  .shopping_author {
+    margin-bottom: 10px;
+  }
+}
+
+.title-part,
+.title {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.18;
+  min-width: 380px;
+
+  margin-bottom: 120px;
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .title-part,
+    .title {
+    font-size: 48px;
+    line-height: 1.08;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+.title-part,
+  .title {
+    font-size: 48px;
+    line-height: 1.08;
+    margin-bottom: 40px;
+  }
+}
+
+.title {
+margin-top: 40px;
+margin-bottom: 40px;
+margin-right: 162px;
+
+color: var(--same-blue);
+
+}
+
+.booksimg {
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 8px;
+}
+
+.btn-delete {
+  display: flex;
+  position: absolute;
+  border: 2px solid var(--same-blue);
+  background-color: var(--same-blue);
+  top: 14px;
+  right: 14px;
+
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  margin-left: 21px;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-delete {
+    top: 24px;
+    right: 24px;
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.btn-delete:hover {
+  background-color: var(--same-blue);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-delete {
+  fill: var(--same-blue);
+  width: 22px;
+  height: 22px;
+}
+
+.social-icon-book {
+  width: 28px;
+  height: 100%;
+}
+
+.social-icon {
+  filter: grayscale(100%);
+  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon:hover {
+    filter: drop-shadow(0px 3px 3px var(--hover));
+ }
+
+
+.socials_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon-amazon {
+  width: 28px;
+  height: 15px;
+  margin-bottom: 0px;
+  margin-right: 6px;
+}
+
+social-icon-amazon:hover {
+  fill: var(--location-text-color);
+  stroke: var(--location-text-color);
+
+}
+
+.shopping-message {
+  font-family: 'DM Sans';
+  font-size: 14px ;
+  text-align: center;
+  line-height: 1.28;
+
+  margin-top: 120px;
+  margin-bottom: 14px;
+  margin-right: 65.5px;
+  margin-left: 65.5px;
+  width: 244px;
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .shopping-message {
+    font-size: 18px;
+    width: 349px;
+    margin-left: 210px;
+    margin-right: 209px;
+    margin-top: 140px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .shopping-message {
+    margin-left: 355px;
+    margin-right: 356px;
+  }
+}
+
+.book-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping-books {
+  width: 265px;
+  height: 198px;
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 302px;
+}
+@media screen and (min-width: 768px) {
+  .shopping-books {
+    width: 322px;
+    height: 241px;
+    margin-left: 210px;
+    margin-right: 209px;
+    margin-bottom: 140px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .shopping-books {
+    margin-left: 355px;
+    margin-right: 356px;
+    margin-bottom: 157px;
+  }
+}
+
+.amazon_logo {
+  position: absolute;
+  bottom: 0px;
+  right: 24px;
+
+  width: 48px;
+  height: 15px;
+  margin-bottom: 0px;
+  margin-left: 8px;
+}
+
+@media only screen and (max-width: 1279px) {
+  .funds-css {
+        position: absolute;
+          white-space: nowrap;
+          width: 1px;
+          height: 1px;
+          overflow: hidden;
+          border: 0;
+          padding: 0;
+          clip: rect(0 0 0 0);
+          clip-path: inset(50%);
+          margin: -1px;
+  }
+}

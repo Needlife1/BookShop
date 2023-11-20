@@ -1,0 +1,158 @@
+<header class="header">
+  <div class="container container-header">
+    <div class="left-col">
+      <a href="./index.html" class="logo" aria-label="Logo link on page">
+        <svg
+          class="header logo-svg"
+          width="109"
+          height="28"
+          aria-label="Page Logo"
+        >
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+
+      <ul class="menu">
+        <li class="menu-item home">
+          <a
+            href="./index.html"
+            class="menu-link"
+            aria-label="Home"
+            id="link-home"
+            >Home</a
+          >
+        </li>
+        <li class="menu-item current">
+          <a
+            href="./shopping.html"
+            class="menu-link"
+            aria-label="Shopping list"
+            id="link-shopping"
+          >
+            Shopping list
+            <svg
+              class="bucket-icon"
+              width="20"
+              height="20"
+              aria-label="Basket icon"
+            >
+              <use href="./images/icons.svg#icon-basket"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="right-col">
+      <div class="box-toggle">
+        <div class="circle">
+          <svg
+            class="white-circle"
+            width="18"
+            height="18"
+            aria-label="Toggle icon"
+          >
+            <use href="./images/icons.svg#icon-toggle"></use>
+          </svg>
+        </div>
+      </div>
+
+      <!--    Registration button  -->
+
+      <button
+        type="button"
+        class="avatar-button btn-main-signup sign-in-button"
+        id="sign-in-button-main"
+        aria-label="Sign in button main page"
+      >
+        <span class="box-sign-up">
+          Sign up
+          <svg
+            width="23"
+            height="26"
+            class="icon"
+            aria-label="Sign in button icon"
+            onclick="openAuthModal(document.getElementById('authModal'))"
+          >
+            <use href="./images/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </span>
+      </button>
+
+      <!-- Button for mobMenu -->
+      <button
+        type="button"
+        class="mob-menu"
+        id="mobile-burger"
+        aria-label="Mobile menu button"
+      >
+        <svg
+          width="26"
+          height="26"
+          class="hamburger"
+          aria-label="Mobile menu icon open"
+        >
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+        <svg
+          width="26"
+          height="26"
+          class="close"
+          aria-label="Mobile menu icon close"
+        >
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="box-mob-menu">
+    <!--Registration button -->
+
+    <button
+      type="button"
+      class="mob-avatar sign-in-button "
+      id="sign-in-button"
+      aria-label="Sign in button"
+    >
+      <span class="box-sign-up">
+        Sign up
+        <svg
+          width="23"
+          height="26"
+          class="icon"
+          aria-label="Sign in button icon"
+        >
+          <use href="./images/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </span>
+    </button>
+
+    <ul class="mobile-menu-navigation">
+      <li class="mobile-menu-nav-item">
+        <a
+          href="./index.html"
+          class="menu-link mobile"
+          id="bestsellers"
+          aria-label="Home"
+          >Home
+        </a>
+      </li>
+      <li class="mobile-menu-nav-item">
+        <a
+          href="./shopping.html"
+          class="menu-link mobile"
+          id="shop-page"
+          aria-label="Shopping list"
+          >Shopping list</a
+        >
+        <svg
+          class="mobile-basket-icon"
+          width="20"
+          height="20"
+          aria-label="Basket icon"
+        >
+          <use href="./images/icons.svg#icon-mobile-basket"></use>
+        </svg>
+      </li>
+    </ul>
+  </div>
+</header>

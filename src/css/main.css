@@ -1,0 +1,155 @@
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./authorisation.css');
+@import url('./category.css');
+@import url('./funds.css');
+@import url('./books.css');
+@import url('./popup.css');
+@import url('./scroll-up.css');
+@import url('./footer.css');
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/dmsans-bold-webfont.woff2') format('woff2'),
+    url('../fonts/dmsans-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/dmsans-medium-webfont.woff2') format('woff2'),
+    url('../fonts/dmsans-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/dmsans-regular-webfont.woff2') format('woff2'),
+    url('../fonts/dmsans-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dm_sansitalic';
+  src: url('../fonts/dmsans-italic-webfont.woff2') format('woff2'),
+    url('../fonts/dmsans-italic-webfont.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat-variablefont_wght-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Seymour One';
+  src: url('../fonts/seymourone-regular-webfont.woff2') format('woff2'),
+    url('../fonts/seymourone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Seymour One', sans-serif;*/
+  background-color: var(--background-body-color);
+}
+
+:root {
+  --primary-color: #111111;
+  --same-white: #ffffff;
+  --secondary-color: #ffffff;
+  --location-text-color: #4f2ee8;
+  --same-blue: #4f2ee8;
+  --accent-color: #eac645;
+  --background-color: #d0d0d0;
+  --background-body-color: #f6f6f6;
+  --light-gray: #e0e0e0;
+  --dark-color: rgba(17, 17, 17, 0.6);
+  --light-gray-text: #b4afaf;
+  --dark-logo: #000000;
+  --hover: rgba(0, 0, 0, .35)
+}
+
+.dark-theme {
+  --primary-color: #ffffff;
+  --same-white: #ffffff;
+  --same-blue: #4f2ee8;
+  --secondary-color: #111111;
+  --location-text-color: #eac645;
+  --accent-color: #eac645;
+  --background-color: #d0d0d0;
+  --background-body-color: #202024;
+  --light-gray: rgba(17, 17, 17, 0.6);
+  --dark-color: rgba(255, 255, 255, 0.6);
+  --light-gray-text: #b4afaf;
+  --dark-logo: #f3f3f3;
+  --hover: rgba(255, 255, 255, 0.856)
+}
+
+.main-page-structure {
+  display: flex;
+  /* gap: 30px; */
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /* justify-content: space-around; */
+  padding: 40px 20px 0 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-page-structure {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .main-page-structure {
+    flex-direction: row;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;}
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

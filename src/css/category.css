@@ -1,0 +1,103 @@
+/**
+  |============================
+  | CATEGORIES
+  |============================
+*/
+
+.categ-funds {
+    padding-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+.categ-funds {
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .categ-funds {
+    padding-bottom: 0;
+  }
+}
+
+.categ-funds-container {
+    min-width: 320px;
+    max-width: 375px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+.categ-funds-container {
+    max-width: 768px;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .categ-funds-container {
+    max-width: 380px;
+    margin: 0;
+    flex-direction: column;
+    gap: 46px;
+    justify-content: normal;
+  }
+}
+
+.categories {
+    max-width: 335px;
+    overflow-y: scroll;
+    max-height: 228px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--dark-color);
+    line-height: 1.125;
+    letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+.categories {
+    max-width: 337px;
+    max-height: 472px;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .categories {
+    max-width: 356px;
+  }
+}
+
+.categ-item {
+  cursor: pointer;
+}
+
+.categ-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+.categ-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.is-active-item {
+    color: var(--location-text-color);
+    font-weight: 700;
+    line-height: 1.125;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+.is-active-item {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+}
