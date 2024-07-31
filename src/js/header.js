@@ -3,7 +3,8 @@ const shopPage = document.getElementById('shop-page');
 const homeDesktopLink = document.querySelector('#link-home');
 const homeShoppingLink = document.querySelector('#link-shopping');
 
-const currentPageName = window.location.pathname.split("/").pop();
+const currentPageName = window.location.pathname.split('/').pop();
+
 if (currentPageName == 'shopping.html') {
   homeBtn.classList.remove('active');
   shopPage.classList.add('active');
@@ -16,12 +17,10 @@ if (currentPageName == 'shopping.html') {
   homeShoppingLink.classList.remove('active');
 }
 
-
 const refs = {
   bookList: document.querySelector('.book-list'),
   home: document.getElementById('bestsellers'),
   body: document.querySelector('body'),
-
 };
 
 //burger-js

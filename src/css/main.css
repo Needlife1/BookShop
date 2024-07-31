@@ -65,7 +65,6 @@
 body {
   font-family: 'DM Sans', sans-serif;
   font-family: 'Montserrat', sans-serif;
-  /*font-family: 'Seymour One', sans-serif;*/
   background-color: var(--background-body-color);
 }
 
@@ -82,7 +81,8 @@ body {
   --dark-color: rgba(17, 17, 17, 0.6);
   --light-gray-text: #b4afaf;
   --dark-logo: #000000;
-  --hover: rgba(0, 0, 0, .35)
+  --hover: rgba(0, 0, 0, .35);
+  --background-color: #2f303a;
 }
 
 .dark-theme {
@@ -103,10 +103,8 @@ body {
 
 .main-page-structure {
   display: flex;
-  /* gap: 30px; */
   flex-direction: column;
   flex-wrap: nowrap;
-  /* justify-content: space-around; */
   padding: 40px 20px 0 20px;
 }
 
@@ -135,7 +133,8 @@ body {
 
 @media screen and (min-width: 375px) {
   .container {
-    width: 375px;}
+    width: 375px;
+  }
 }
 
 @media screen and (min-width: 768px) {
